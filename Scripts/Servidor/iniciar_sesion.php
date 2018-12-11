@@ -9,7 +9,7 @@ $enlace = conexion($host, $usuario, $password, $bd);
 
 //var_dump($enlace);
 
-$usuario = $_POST['caja_usuario'];
+$usuario_c = $_POST['caja_usuario'];
 $contraseña = $_POST['caja_password'];
 
 //validaciones
@@ -17,12 +17,12 @@ $contraseña = $_POST['caja_password'];
 //Procedimiento Almacendado para verificar el Usuario
 //SELECT * from BD_usuarios_escuela where usuario = x and password = y
 ;
-$sql = "SELECT * from cuenta where usuario = '$usuario' and contraseña = '$contraseña' ";
+$sql = "SELECT * from cuenta where usuario = '$usuario_c' and contraseña = '$contraseña' ";
 
 $res = mysqli_query($enlace, $sql);
 
 var_dump($usuario);
-var_dump($contraseña);
+var_dump($usuario);
 
 if(mysqli_num_rows($res) == 1){
   header("Location:../../vista/menu_principal");
