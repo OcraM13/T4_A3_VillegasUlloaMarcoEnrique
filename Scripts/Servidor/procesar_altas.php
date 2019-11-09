@@ -10,7 +10,7 @@ include("conexion.php");
 $host = "127.0.0.1"; //Local Host
 $usuario = "Marco";
 $password = "5879";
-$bd = "alumnos";
+$bd = "ESCUELA_WEB";
 
 $num_cont = $_post['caja_nunCon'];
 $nombre = $_post['caja_Nombre'];
