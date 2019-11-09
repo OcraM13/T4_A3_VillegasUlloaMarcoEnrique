@@ -3,7 +3,7 @@ include("conexion.php");
 $host = "127.0.0.1"; //Local Host
 $usuario = "Marco";
 $password = "5879";
-$bd = "alumnos";
+$bd = "ESCUELA_WEB";
 
 $enlace = conexion($host, $usuario, $password, $bd);
 
